@@ -97,6 +97,8 @@ nvim_lsp.pyright.setup {}
 
 nvim_lsp.tailwindcss.setup {}
 
+nvim_lsp.bashls.setup {}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,

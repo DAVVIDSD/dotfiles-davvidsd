@@ -17,6 +17,7 @@ null_ls.setup({
         formatting.stylua,
         -- completion.spell,
         formatting.autopep8,
+        formatting.beautysh,
         diagnostics.fish
     },
 })
