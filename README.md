@@ -11,19 +11,19 @@
 
 - `Clone repository` :
 ```shell
-$ git clone https://github.com/DAVVIDSD/dotfiles-davvidsd.git
+git clone https://github.com/DAVVIDSD/dotfiles-davvidsd.git
 ```
 - `Give permissions to run the installation script` :
 ```shell
-$ chmod +x $HOME/dotfiles-davvidsd/install-nvim.sh
+chmod +x $HOME/dotfiles-davvidsd/install-nvim.sh
 ```
 - `Execute the script, if you have a configuration a backup will be saved in $HOME/.config/nvim_backup otherwise a new directory will be created.` :
 ```shell
-$ ./$HOME/dotfiles-davvidsd/install-nvim.sh
+$HOME/./dotfiles-davvidsd/install-nvim.sh
 ```
 - `Finally, within neovim` :
 ```shell
-$ :PackerInstall 
+:PackerInstall 
 ```
 
 ## Neovim plugins
