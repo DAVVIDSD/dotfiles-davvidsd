@@ -25,6 +25,9 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
---keymap.set('n', '<space>f', ':Prettier<cr>')
 keymap.set('n', '<space>w', ':w<cr>')
 keymap.set('n', '<space>q', ':q<cr>')
+
+-- GIT
+keymap.set('n', '<space>g', ':LazyGit')
+

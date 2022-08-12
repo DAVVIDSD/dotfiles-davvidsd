@@ -5,7 +5,9 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-bind \cg 'lazygit'
+set -Ux EDITOR vim
+
+# bind \cg 'lazygit'
 bind \cn 'nvim $(fzf)'
 bind \cf 'fzf'
 bind \cl 'clear; commandline -f repaint'
@@ -22,6 +24,8 @@ alias ll "ls -l"
 alias lla "ll -A"
 alias g git
 alias t "~/./tmux-start.sh"
+alias mydot "cd ~/dotfiles-davvidsd/"
+
 
 if type -q exa
   alias ls "exa --icons"
