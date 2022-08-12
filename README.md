@@ -1,9 +1,32 @@
 # David's dotfiles
 
 
-## Neovim setup
+## Requires neovim
+- [Neovim](https://neovim.io/) (>= 0.7)
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) - A plugin manager for Neovim
 
-Requires [Neovim](https://neovim.io/) (>= 0.7)
+
+## Quickstart neovim
+> Unix, Linux Installation
+
+- `Clone repository` :
+```shell
+$ git clone https://github.com/DAVVIDSD/dotfiles-davvidsd.git
+```
+- `Give permissions to run the installation script` :
+```shell
+$ chmod +x $HOME/dotfiles-davvidsd/install-nvim.sh
+```
+- `Execute the script, if you have a configuration a backup will be saved in $HOME/.config/nvim_backup otherwise a new directory will be created.` :
+```shell
+$ ./$HOME/dotfiles-davvidsd/install-nvim.sh
+```
+- `Finally, within neovim` :
+```shell
+$ :PackerInstall 
+```
+
+## Neovim plugins
 
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) - A plugin manager for Neovim
 - [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - A truecolor, solarized dark colorscheme
