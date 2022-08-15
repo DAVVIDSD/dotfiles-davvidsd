@@ -25,6 +25,7 @@ alias lla "ll -A"
 alias g git
 alias t "~/./tmux-start.sh"
 alias mydot "cd ~/dotfiles-davvidsd/"
+alias py "python3"
 
 
 if type -q exa

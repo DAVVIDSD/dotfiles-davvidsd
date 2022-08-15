@@ -30,6 +30,7 @@ telescope.setup {
         ["n"] = {
           -- your custom normal mode mappings
           ["N"] = fb_actions.create,
+          ["R"] = fb_actions.rename,
           ["h"] = fb_actions.goto_parent_dir,
           ["/"] = function()
             vim.cmd('startinsert')
@@ -56,7 +57,7 @@ vim.keymap.set('n', '\\\\', function()
   builtin.buffers()
 end)
 vim.keymap.set('n', ';t', function()
-  builtin.help_tags()
+  builtin.treesitter()
 end)
 vim.keymap.set('n', ';;', function()
   builtin.resume()
@@ -64,15 +65,15 @@ end)
 vim.keymap.set('n', ';e', function()
   builtin.diagnostics()
 end)
-vim.keymap.set("n", "sf", function()
+vim.keymap.set("n", "<space>nt", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),
     respect_gitignore = false,
     hidden = true,
     grouped = true,
-    previewer = false,
+    previewer = true,
     initial_mode = "normal",
-    layout_config = { height = 40 }
+    layout_config = {height = 40, width = 100 }
   })
 end)
